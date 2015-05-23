@@ -24,7 +24,7 @@ public class DogResourceV1 {
 	@GET
 	@Path("/{id}")
 	@IgnoreAuthentication
-	@ApiOperation(value = "Find Dog by Dog ID", notes = "Find Dog by Dog ID", responseClass = "com.cxf.restapis.resource.dog.DogModel", multiValueResponse = true)
+	@ApiOperation(value = "Find Dog by Dog ID", notes = "Find Dog by Dog ID!", responseClass = "com.cxf.restapis.resource.dog.DogModel", multiValueResponse = true)
 	public ResponseModel getDogById(
 			@ApiParam(value = "ID of Dog that needs to be fetched", required = true) @PathParam("id") Long dogId)
 			throws Exception
